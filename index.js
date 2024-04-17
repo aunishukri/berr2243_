@@ -72,7 +72,7 @@ app.post('/login', async (req, res) => {
 // get user profile
 app.get('/user/:siapadia/:emaildia', async (req, res) => {
   // findOne
-  let result = await client.db('maybank2u').collection('users').findOne({
+  let result = await client.db('testcollectionrun').collection('datauser').findOne({
     username: req.params.siapadia,
     email: req.params.emaildia
   })
